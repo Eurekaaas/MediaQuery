@@ -1,0 +1,293 @@
+.video{
+  width: 100vw;
+  height: auto;
+  background-position: center;
+  position: relative;
+  filter: opacity(80%);
+  overflow: hidden;
+}
+
+
+.name{
+  position: absolute;
+  left: 50vw;
+  top: 70vh;
+  transform: translate(-50%, -50%);
+  letter-spacing: 1vw;
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  color: #424b50;
+  font-weight: bold;
+  font-size: 5vh;
+  line-height: 0.9;
+}
+
+
+.verticalLine{
+  border-left: 0.5vw solid #415065;
+  height: 40vh;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 30vh;
+}
+
+.MountainsNav{
+  font-family: 'ZCOOL XiaoWei', serif;
+  text-decoration: none;
+  text-align: center;
+  width: 40vw;
+  height: 60vh;
+  left: 5vw;
+  top: 25vh;
+  position: absolute;
+  color: #415065;
+  line-height: 0.8;
+}
+
+.arrow{
+  width: 4vw;
+  height: 4vw;
+  object-fit: scale-down;
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+}
+
+.MountainsNav p{
+  font-family: 'Rock Salt', cursive;
+  font-weight: bold;
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+}
+
+.SeasNav{
+  font-family: 'ZCOOL XiaoWei', serif;
+  text-decoration: none;
+  text-align: center;
+  width: 40vw;
+  height: 60vh;
+  right: 5vw;
+  top: 25vh;
+  position: absolute;
+  color: #415065;
+  line-height: 0.8;
+}
+
+.SeasNav p{
+  font-family: 'Rock Salt', cursive;
+  font-weight: bold;
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.discription{
+  position: relative;
+  width: 60vw;
+  font-size: 1vw;
+  top: 10vh;
+  left: 20vw;
+  font-family: 'Sen', sans-serif;
+  color: #415065;
+}
+
+.discription p{
+  text-indent: 2vw;
+}
+
+.mIcon{
+  position: relative;
+  width: 5vw;
+  height: 5vw;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 20vh;
+  left: 25vw;
+  padding-bottom: 5vh;
+}
+
+.menu a{
+  box-sizing: border-box;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 5vw;
+  font-family: 'Sen', sans-serif;
+  text-decoration: none;
+  font-size: 1.3vw;
+  font-weight: bold;
+  letter-spacing: 0.2vw;
+  color: #75392b;
+}
+
+
+.sIcon{
+  position: relative;
+  width: 3vw;
+  height: 3vw;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.Menu{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 20vh;
+  left: 5vw;
+  height: auto;
+  padding-bottom: 5vh;
+}
+
+.Menu a{
+  box-sizing: border-box;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+  padding-left: 1vw;
+  font-family: 'Sen', sans-serif;
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: bold;
+  color: #75392b;
+}
+
+.column{
+  float: left;
+  width: 25%;
+  padding-left: 5%;
+}
+
+.title{
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  position: relative;
+  line-height: 5vh;;
+  color: #424b50;
+}
+
+.content{
+  /* width: 50vw; */
+  /* height: auto; */
+  /* left: 60vw; */
+  /* transform: translate(-50%); */
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-family: 'ZCOOL XiaoWei', serif;
+  padding-top: 5vh;
+  color: #375221;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.each{
+  margin: 30px;
+  flex-basis: 33.33%;
+  padding-bottom: 8vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.text-wrapper {
+  /* flex: 1; */
+  margin-right: 10px;
+}
+
+.text-wrapper h1 {
+  white-space: nowrap;
+  margin-top: 0;
+}
+
+.text-wrapper p {
+  max-height: 300px;
+}
+
+
+.discriptions{
+  writing-mode: vertical-lr;
+  /* width: auto; */
+  height: 30vw;
+}
+
+figure {
+  display: block;
+  position: relative;
+  margin: 0;
+  /* width: 30vw; */
+  /* height: 30vw; */
+}
+
+.pics{
+  object-fit: fit;
+  width: 100%;
+  /* width: 30vw;
+  height: 30vw; */
+  /* width: 100%;
+  height: 100%; */
+}
+
+/* Breakpoints */
+
+/* Wide Screen */
+
+@media screen and (min-width: 600px){
+  .content {
+    max-width: 100%;
+  }
+
+  .text-wrapper h1 {
+    font-size: 10vmin;
+  }
+
+  .text-wrapper p {
+    font-size: 4vmin;
+  }
+
+  figure {
+    max-width: 30vmin;
+  }
+  figure img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+  }
+
+  .content .each {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 1080px){
+  .content {
+    max-width: 1000px;
+  }
+
+  .content .each {
+    flex-basis: 28%;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .content {
+    max-width: 1280px;
+  }
+
+  .content .each {
+    flex-basis: 28%;
+  }
+}
+
+
